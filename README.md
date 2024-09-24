@@ -17,12 +17,12 @@ For example
 
 ```
 # Define a base configuration
-base_config:
+base-config: &base
   key1: value1
   key2: value2
 
 # Inherit from the base configuration and override a property
-derived_config:
-  <<: *base_config
+derived-config:
+  <<: *base
   key2: overridden_value
 ```
